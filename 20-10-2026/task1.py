@@ -1,0 +1,5 @@
+num = str(input("Number: "))
+tup1 = tuple(map(int, num))
+tup2 = tuple(map(int, num[::-1]))
+print("Normal order:", tup1)
+print("Reverse order:", tup2)
