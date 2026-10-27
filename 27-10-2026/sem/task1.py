@@ -1,0 +1,7 @@
+arr = list(map(int, str(input("Enter a series of whole numbers([num1] [num2] [num3]...): ")).split()))
+arr = list(filter(lambda num: num != 0, arr))
+even = list(filter(lambda num: num % 2 == 0, arr))
+odd = list(filter(lambda num: num % 2 != 0, arr))
+s = sum(even)
+avg = round(sum(odd) / len(odd), 2)
+print("Sum:", s, "\nAverage:", avg)

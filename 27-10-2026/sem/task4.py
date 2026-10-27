@@ -1,0 +1,5 @@
+lo = float(input("Lower limit: "))
+hi = float(input("Upper limit: "))
+arr = list(map(float, str(input("Enter a series of numbers([num1] [num2] [num3]...): ")).split()))
+arr = list(filter(lambda num: num.__ge__(lo).__and__(num.__le__(hi)), arr))
+print("Count:", len(arr), "\nSum:", sum(arr))
